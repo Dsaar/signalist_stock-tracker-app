@@ -5,7 +5,7 @@ import UserDropdown from "@/components/UserDropdown";
 
 
 
-const Header = () => {
+const Header = ({user}:{user:User}) => {
 
 
     return (
@@ -18,7 +18,7 @@ const Header = () => {
                    <NavItems/>
                 </nav>
 
-              <UserDropdown />
+              <UserDropdown user={user} />
             </div>
         </header>
     )
